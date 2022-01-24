@@ -12,12 +12,12 @@ import org.springframework.stereotype.Service;
 import javax.transaction.Transactional;
 
 @Service
-public class UserDetailsServiceImpl implements UserDetailsService {
+public class CustomUserDetailService implements UserDetailsService {
 
     @Autowired
     private UserRepository userRepository;
 
-    public UserDetailsServiceImpl(UserRepository userRepository) {
+    public CustomUserDetailService(UserRepository userRepository) {
         this.userRepository = userRepository;
     }
 
